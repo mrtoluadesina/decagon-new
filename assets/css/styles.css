@@ -1,0 +1,160 @@
+@import '__variables.css';
+@import 'constants.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--default-font);
+  color: #2C2C2C;
+}
+img {
+  width: 100%;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.container {
+  display: flex;
+  padding: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 0.58rem;
+  opacity: 0.5;
+  color: #1A1A1A;
+}
+.main-title {
+  font-size: 1.2rem;
+  color: #2C2C2C;
+}
+.section {
+  padding: 4rem 2rem;
+}
+.bg-grey {
+  background-color: var(--grey);
+}
+
+
+.main-header {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background: url('../images/banner-bg.png') center no-repeat #111111;
+  background-size: cover;
+}
+.main-header .header-brand-nav {
+  position: relative;
+  overflow-x: hidden;
+}
+.main-header .header-brand-nav .container {
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.main-header .header-brand-nav .brand {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-header .header-brand-nav nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 20%;
+  position: relative;
+}
+.main-header .header-brand-nav nav::before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  border-radius: 100%;
+  top: -38px;
+  right: -36px;
+  background-color: var(--green);
+}
+.main-header .header-brand-nav nav .mobile-nav {
+  display: flex;
+  position: relative;
+  width: 24px;
+  height: 14px;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+.main-header .header-brand-nav nav .mobile-nav::before,
+.main-header .header-brand-nav nav .mobile-nav::after {
+  content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+.main-header .header-brand-nav nav .mobile-nav::before {
+  top: 0;
+}
+.main-header .header-brand-nav nav .mobile-nav::after {
+  bottom: 0;
+}
+.main-header .header-brand-nav nav .web-nav {
+  display: none;
+}
+.main-header .header-caption {
+  margin-top: 150px;
+  padding: 1rem 2rem;
+}
+.main-header .header-caption h1 {
+  font-size: 2.65rem;
+  color: #fff;
+}
+.main-header .header-caption h1 span {
+  color: #bbd54b;
+}
+.main-header .header-caption p {
+  color: #fff;
+  margin-top: 60px;
+  font-size: 1rem;
+  line-height: 28px;
+  font-weight: 300;
+  font-family: var(--helvetica-light);
+}
+.main-header .header-caption p a {
+  color: var(--primary-btn-background);
+}
+
+.feature {
+  padding: 1rem 0;
+}
+.feature .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feature .container .title {
+  padding-bottom: 1rem;
+}
+.feature .container .brand-logos {
+  width: 100%;
+  padding: 0.35rem 2rem;
+}
+
+.solutions .container {
+  padding: 1rem 0;
+}
+.solutions .container .content .title {
+  color: var(--green);
+}
+.solutions .container .content .main-title {
+  padding: 0.5rem 1rem 1.5rem;
+}

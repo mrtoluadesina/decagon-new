@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HelveticaMedium.woff') format('truetype');
+  src: url('./assets/fonts/HelveticaMedium.woff') format('opentype');
+}
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url('./assets/fonts/HelveticaLight.woff') format('truetype');
+  src: url('./assets/fonts/HelveticaLight.woff') format('opentype');
+}
+
+:root {
+  --default-font: 'Helvetica Neue', sans-serif;
+  --helvetica-light: 'Helevetica Neue Light', sans-serif;
+  --primary-btn-background: #3bab59;
+  --primary-btn-color: #fff;
+  --default-line-height: 50px;
+
+  --green: #3AAB58;
+  --grey: #F9F9F9;
+}
