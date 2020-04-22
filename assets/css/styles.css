@@ -45,7 +45,7 @@ p {
   padding: 0.5rem 1rem 1.5rem;
 }
 .section {
-  padding: 4rem 2rem;
+  padding: 1rem 2rem 4rem;
 }
 .bg-grey {
   background-color: var(--grey);
@@ -161,16 +161,18 @@ p {
   padding: 0.35rem 2rem;
 }
 
-.services {
-  padding-top: 1rem;
+.solutions {
+  padding-top: 4rem;
 }
-.services .container .content .col-row .service-box {
+.services .container .content .col-row .service-box, 
+.experience .container .content .col-row .work-box {
   position: relative;
   height: 320px;
   overflow: hidden;
   margin: 1rem 0;
 }
-.services .container .content .col-row .service-box::before {
+.services .container .content .col-row .service-box::before, 
+.experience .container .content .col-row .work-box {
   position: absolute;
   content: '';
   width: 100%;
@@ -192,6 +194,21 @@ p {
   color: #ffffff;
   width: 65%;
   margin-bottom: 0.8rem;
+}
+
+.experience .container .content .col-row .work-box {
+  height: 200px;
+}
+.experience .container .content .col-row .work-box .inner-content {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
