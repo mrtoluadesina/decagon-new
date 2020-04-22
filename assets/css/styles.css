@@ -42,6 +42,10 @@ p {
 .bg-grey {
   background-color: var(--grey);
 }
+.col-row {
+  display: flex;
+  flex-direction: column;
+}
 
 
 .main-header {
@@ -57,8 +61,7 @@ p {
 }
 .main-header .header-brand-nav .container {
   justify-content: space-between;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 2rem 1rem 1rem;
 }
 .main-header .header-brand-nav .brand {
   width: 150px;
@@ -155,6 +158,43 @@ p {
   padding: 0.5rem 1rem 1.5rem;
 }
 
-.services .container {
-  padding: 1rem 0;
+.services {
+  padding-top: 1rem
+}
+
+
+@media screen and (min-width: 768px) {
+  .col-row {
+    flex-direction: row;
+  }
+  .main-header .header-brand-nav nav .mobile-nav {
+    display: none;
+  }
+  .main-header .header-brand-nav nav .web-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-header .header-brand-nav nav .web-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 300;
+    margin-right: 70px;
+  }
+  .main-header .header-brand-nav nav .web-nav li:last-child {
+    margin-left: auto;
+  }
+  .main-header .header-brand-nav nav .web-nav li a.link-btn {
+    padding: 15px 50px;
+    background: var(--primary-btn-background);
+    color: var(--primary-btn-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--helvetica-light);
+    font-weight: 200;
+    font-size: 1rem;
+    margin-right: 0;
+  }
+
 }
