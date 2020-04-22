@@ -20,7 +20,7 @@ p {
 }
 .container {
   display: flex;
-  padding: 0 1rem;
+  padding: 1rem 0;
 }
 .content {
   display: flex;
@@ -30,7 +30,7 @@ p {
 .title {
   font-size: 0.58rem;
   opacity: 0.5;
-  color: #1A1A1A;
+  color: var(--green)
 }
 .main-title {
   font-size: 1.2rem;
@@ -140,21 +140,21 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
 }
 .feature .container .title {
   padding-bottom: 1rem;
+  color: #1A1A1A;
 }
 .feature .container .brand-logos {
   width: 100%;
   padding: 0.35rem 2rem;
 }
 
-.solutions .container {
-  padding: 1rem 0;
-}
-.solutions .container .content .title {
-  color: var(--green);
-}
 .solutions .container .content .main-title {
   padding: 0.5rem 1rem 1.5rem;
+}
+
+.services .container {
+  padding: 1rem 0;
 }
